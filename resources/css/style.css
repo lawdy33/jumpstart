@@ -1,0 +1,84 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  padding-top: 50px;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: white;
+  color: #399bd1;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: white;
+  color: #399bd1;
+}
+.navbar-default .navbar-nav > .active > a:visited {
+  background-color: white;
+  color: #399bd1;
+}
+
+.jumbotron-bike {
+  background-image: url("../images/jumbotron-bike.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron h1 {
+  font-family: Monoton;
+  font-size: 7.1rem;
+  color: white;
+  margin-top: 11.85rem;
+  text-shadow: -1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.jumbotron p {
+  color: white;
+  width: 51.3rem;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 2.8rem;
+}
+
+.jumbotron .btn {
+  margin-bottom: 11.85rem;
+  width: 11.4rem;
+  padding: 1.3rem 0;
+  background-color: #399bd1;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+.jumbotron .btn:hover {
+  box-shadow: 0 0 12px rgba(0,0,0,0.9);
+}
+
+.jumbotron .btn:active {
+  box-shadow: 0 0 0 rgba(0,0,0,0.5);
+}
+
+.jumbotron {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
