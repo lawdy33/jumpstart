@@ -31,15 +31,47 @@ html {
 
 .navbar-default .navbar-nav > .active > a:hover {
   background-color: white;
-  color: #399bd1;
+  text-shadow: 1px -1px;
 }
+
 .navbar-default .navbar-nav > .active > a:visited {
   background-color: white;
   color: #399bd1;
 }
 
+/* Jumbotron */
+
+.jumbotron {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 .jumbotron-bike {
   background-image: url("../images/jumbotron-bike.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-beer {
+  background-image: url("../images/jumbotron-beer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-flowers {
+  background-image: url("../images/jumbotron-flowers.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-duffel {
+  background-image: url("../images/jumbotron-duffel.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +82,7 @@ html {
   font-size: 7.1rem;
   color: white;
   margin-top: 11.85rem;
-  text-shadow: -1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
 }
 
 .jumbotron p {
@@ -77,8 +109,84 @@ html {
   box-shadow: 0 0 0 rgba(0,0,0,0.5);
 }
 
-.jumbotron {
-  padding: 0;
-  margin: 0;
+@media only screen and (max-width: 767px) {
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
+
+  .jumbotron p {
+    max-width: 100%;
+  }
+}
+
+/* Featured Project */
+
+.image-container img {
+  max-width: 100%;
+}
+
+.container h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #399bd1;
+  margin: 36px 0 20px 0;
+}
+
+.container h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#productcat h3 {
+  color: #399bd1;
+}
+
+#productcat li {
+  line-height: 1.4;
+  color: rgba(0,0,0,0.7);
+}
+
+/* Projects */
+
+#projects {
+  margin-bottom: 5.85rem;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  opacity: 0.7;
+  transition: transform .5s, opacity .5s;
+}
+
+.image-container img:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+/* Good Idea section */
+
+.idea {
   text-align: center;
+  background-color: #f3f3f3;
+  padding: 5.2rem 0;
+}
+
+.idea strong {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.idea p {
+  width: 42rem;
+  margin: 0 auto;
+  padding: 1.4rem 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .idea p {
+    max-width: 100%;
+  }
 }
