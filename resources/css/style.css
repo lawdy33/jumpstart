@@ -24,17 +24,17 @@ html {
   border: none;
 }
 
-.navbar-default .navbar-nav > .active > a {
+
+.navbar-default .navbar-nav .active a {
   background-color: white;
   color: #399bd1;
 }
 
-.navbar-default .navbar-nav > .active > a:hover {
+.navbar-default .navbar-nav .active a:hover {
   background-color: white;
-  text-shadow: 1px -1px;
 }
 
-.navbar-default .navbar-nav > .active > a:visited {
+.navbar-default .navbar-nav .active a:visited {
   background-color: white;
   color: #399bd1;
 }
@@ -47,6 +47,7 @@ html {
   text-align: center;
   background-color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  height: 44rem;
 }
 
 .jumbotron-bike {
@@ -112,6 +113,7 @@ html {
 @media only screen and (max-width: 767px) {
   .jumbotron h1 {
     font-size: 5.7rem;
+    max-width: 100%;
   }
 
   .jumbotron p {
